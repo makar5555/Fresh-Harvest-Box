@@ -1,0 +1,10 @@
+@use "../utils/variables" as *;
+.container{
+    margin: 0 auto;
+    width: 1280px;
+}
+body {
+    font-family: $main-family;
+    background-color: $bg-color;
+    color: $main-color;
+}

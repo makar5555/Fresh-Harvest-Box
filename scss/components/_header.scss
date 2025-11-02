@@ -1,0 +1,25 @@
+@use "../utils/variables" as *;
+
+.header {
+    color: $secondary-color;
+    background: $header-bg-color;
+    padding-block: 13px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: capitalize;
+        color: inherit;
+    }
+}
