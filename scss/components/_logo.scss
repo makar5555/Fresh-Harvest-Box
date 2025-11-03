@@ -1,17 +1,11 @@
+@use "../utils/variables" as *;
 .logo {
     font-weight: 700;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-        color: $secondary-color;
-    &::before {
-        content: '';
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        margin-right: 8px;
-        background-image: url('../images/logo-icon.svg');
-        background-size: cover;
+    color: $secondary-color;
+    &__icon {
+        padding-right: 8px;
     }
-
 }

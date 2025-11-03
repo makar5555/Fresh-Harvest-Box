@@ -89,14 +89,8 @@ body {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: inherit;
+  color: #AE1332;
 }
-.logo::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  background-image: url("../images/logo-icon.svg");
-  background-size: cover;
+.logo__icon {
+  padding-right: 8px;
 }
