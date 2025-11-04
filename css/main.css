@@ -84,6 +84,18 @@ body {
   color: inherit;
 }
 
+.hero {
+  padding-bottom: 150px;
+  padding-top: 64px;
+}
+.hero__title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .logo {
   font-weight: 700;
   line-height: 18px;
@@ -93,4 +105,67 @@ body {
 }
 .logo__icon {
   padding-right: 8px;
+}
+
+.order {
+  padding-bottom: 150px;
+}
+.order__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.order__desc {
+  padding-top: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  padding-bottom: 44px;
+}
+.order__list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+.order__item {
+  display: flex;
+  padding: 20px 40px;
+  background-color: #FFF;
+  gap: 14px;
+  border-radius: 20px;
+  width: 389px;
+}
+.order__button {
+  border-radius: 200px;
+  padding-block: 12px;
+  white-space: nowrap;
+  border: none;
+  font-size: 18px;
+  color: inherit;
+  font-family: "DM Sans", sans-serif;
+  height: 100%;
+  cursor: pointer;
+}
+.order__button--first {
+  background-color: #AE1332;
+  padding-inline: 32px;
+}
+.order__button--second {
+  background-color: #A4CB66;
+  padding-inline: 18px;
+}
+.order__button--third {
+  background-color: #F5CE13;
+  padding-inline: 28px;
+}
+.order__text {
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
 }

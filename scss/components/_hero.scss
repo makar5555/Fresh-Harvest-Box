@@ -1,0 +1,12 @@
+.hero {
+    padding-bottom: 150px;
+    padding-top: 64px;
+    &__title {
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 64px;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+}
