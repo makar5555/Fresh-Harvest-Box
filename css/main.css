@@ -139,6 +139,21 @@ body {
   border-radius: 20px;
   width: 389px;
 }
+@media (max-width: 1280px) {
+  .order__item {
+    flex-basis: calc((100% - 389px) / 3);
+  }
+}
+@media (max-width: 768px) {
+  .order__item {
+    flex-basis: calc((100% - 389px) / 1);
+  }
+}
+@media (max-width: 480px) {
+  .order__item {
+    flex-basis: calc((100% - 389px) / 1);
+  }
+}
 .order__button {
   border-radius: 200px;
   padding-block: 12px;
