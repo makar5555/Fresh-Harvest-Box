@@ -84,6 +84,14 @@ body {
   color: inherit;
 }
 
+.title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .hero {
   padding-bottom: 150px;
   padding-top: 64px;
@@ -101,10 +109,11 @@ body {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #AE1332;
+  color: #000;
 }
 .logo__icon {
   padding-right: 8px;
+  fill: currentColor;
 }
 
 .order {
@@ -141,17 +150,17 @@ body {
 }
 @media (max-width: 1280px) {
   .order__item {
-    flex-basis: calc((100% - 389px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
   }
 }
 @media (max-width: 768px) {
   .order__item {
-    flex-basis: calc((100% - 389px) / 1);
+    flex-basis: calc((100% - 48px) / 1);
   }
 }
 @media (max-width: 480px) {
   .order__item {
-    flex-basis: calc((100% - 389px) / 1);
+    flex-basis: calc((100% - 48px) / 1);
   }
 }
 .order__button {

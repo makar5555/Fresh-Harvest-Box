@@ -1,11 +1,15 @@
 @use "../utils/variables" as *;
+
 .logo {
     font-weight: 700;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    color: $secondary-color;
+    color: #000;
+
     &__icon {
         padding-right: 8px;
+        fill: currentColor;
     }
+
 }
