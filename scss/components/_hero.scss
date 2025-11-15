@@ -1,6 +1,9 @@
+@use "../utils/variables" as *;
 .hero {
     padding-bottom: 150px;
     padding-top: 64px;
+    position: relative;
+
     &__title {
         font-weight: 500;
         font-size: 64px;
@@ -8,5 +11,29 @@
         text-align: center;
         text-transform: uppercase;
 
+    }
+    &__desc{
+        font-size: 14px;
+    }
+    &__img{
+        /*position: absolute;*/
+        border-radius: 500px;
+        padding: 17px 20px;
+        border: 2px solid transparent;
+        border-image: linear-gradient(180deg, #FFFFFF, #FFFFFF 44.18%, #FFFFFF 0%) 1;
+    }
+
+    &__card {
+        background-color: $second-step-color;
+        border-radius: 500px;
+
+        &--color {
+            background-color: $third-step-color;
+        }
+    }
+    &__item{
+        padding: 32px 12px;
+        text-transform: uppercase;
+        border: #FFFFFF 1px solid;
     }
 }
