@@ -232,3 +232,155 @@ body {
     width: 335px;
   }
 }
+
+
+
+
+
+
+
+/* --- Общие стили для секции --- */
+.fruits {
+    background-color: #AE1332; 
+    color: #ffffff; 
+    padding: 150px 0; 
+    font-family: sans-serif; 
+}
+
+.fruits__container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+
+/* --- Заголовок и описание --- */
+.title {
+    text-align: center;
+    font-size: 40px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.fruits__description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 650px; 
+    margin: 0 auto 44px; 
+}
+.fruits__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+/* --- Стили для одной карточки --- */
+.fruits__card {
+    border-radius: 20px; 
+    padding: 24px; 
+    display: flex;
+    flex-direction: column; 
+    color: #ffffff; 
+}
+
+.fruits__card-title {
+    font-size: 32px; 
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.fruits__card-subtitle {
+    font-size: 18px; 
+    opacity: 0.8; 
+}
+
+.fruits__card-image {
+    max-width: 90%; 
+    height: 251px; 
+    object-fit: contain; 
+    align-self: center; 
+    margin: 6px 0; 
+}
+
+.fruits__card-price {
+    border: none;
+    font-family: inherit; 
+    text-align: left; 
+    cursor: pointer;
+    display: inline-block; 
+    width: fit-content; 
+    background-color: #ffffff;
+    color: #AE1332; 
+    padding: 12px 21px; 
+    border-radius: 20px; 
+    font-weight: bold;
+    font-size: 0.9rem;
+    
+    /* Можно добавить эффект при наведении */
+    transition: background-color 0.3s ease;
+}
+
+.fruits__card-price:hover {
+    background-color: #f0f0f0; /* Чуть темнее при наведении */
+}
+
+/* --- Цвета для каждой карточки (модификаторы) --- */
+.fruits__card--strawberry { background-color: #F8766B; }
+.fruits__card--banana { background-color: #EDD251; }
+.fruits__card--watermelon { background-color: #9DC262; }
+.fruits__card--lime { background-color: #BFD663; }
+.fruits__card--apple { background-color: #E93F29; }
+.fruits__card--peach { background-color: #DB4F4B; }
+.fruits__card--plums { background-color: #9B5366; }
+.fruits__card--orange { background-color: #F47F4C; }
+.fruits__card--kiwi { background-color: #98B37E; }
+
+/* --- Главная кнопка ORDER --- */
+.fruits__order-wrapper {
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+.fruits__order-btn {
+    background-color: #6BB155;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px; 
+    width: 100px; 
+    height: 100px; 
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fruits__order-btn:hover {
+    background-color: #5a9a4a;
+}
+/* Планшеты (например, < 992px) */
+@media (max-width: 992px) {
+    .fruits__list {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    }
+}
+
+/* Мобильные (например, < 600px) */
+@media (max-width: 600px) {
+    .fruits__list {
+        grid-template-columns: 1fr; /* 1 колонка */
+    }
+
+    .title {
+        font-size: 2rem; /* Чуть меньше заголовок */
+    }
+
+    .fruits__card {
+        padding: 20px; /* Уменьшаем отступы на мобильных */
+    }
+}
